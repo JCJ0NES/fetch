@@ -22,7 +22,7 @@ import com.example.fetch.ui.screens.HomeScreen
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun HiringApp() {
-    val scrollBehavior = TopAppBarDefaults.enterAlwaysScrollBehavior()
+    val scrollBehavior = TopAppBarDefaults.pinnedScrollBehavior()
     Scaffold(
     modifier = Modifier.nestedScroll(scrollBehavior.nestedScrollConnection),
     topBar = { HiringTopAppBar(scrollBehavior = scrollBehavior) }
